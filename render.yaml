@@ -24,6 +24,13 @@ services:
           name: truparts-api
           property: url
 
+  - type: web
+    name: truparts-flutter-web
+    runtime: docker
+    rootDir: apps/mobile
+    plan: free
+    envVars: []
+
 databases:
   - name: truparts-db
     databaseName: truparts
